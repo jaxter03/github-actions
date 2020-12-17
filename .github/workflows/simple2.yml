@@ -17,5 +17,13 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+  run-window-commamnd:
+    runs-on: windows-latest
+    steps:
+      - name: yo
+        run: Get-Location
+      - name: yo2
+        run: pwd
+        shell: bash 
 
           
